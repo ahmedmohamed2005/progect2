@@ -1,0 +1,554 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Oswald", sans-serif;
+}
+/* start header */
+/* start nav-top */
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+header .top-nav{
+    display: flex;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    position: relative;
+    height: 40px;
+    overflow: hidden;
+    width: 100%;
+}
+header .top-nav .search{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translatey(-50%);
+}
+header .top-nav i{
+    padding: 20px;
+    font-size: 15px;
+}
+header .top-nav i:hover{
+  background-color: #ccc;
+}
+/* end nav-top */
+/* start title-nav */
+.title-nav h1 b{
+  font-size: 50px;
+  font-weight: bold;
+}
+.title-nav div{
+    display: flex;
+    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+
+}
+.title-nav div p{
+    background-color: black;
+    padding: 0 5px;
+    color: #fff;
+}
+
+.title-nav div span{
+    font-size: 17px;
+    word-spacing: 2px;
+}
+/* end title-nav */
+/* start background-img */
+.background-img{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+.background-img img{
+    width: 100%;
+    height: 100%;
+}
+.background-img .detalis{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    width: 90%;
+}
+    
+.background-img .detalis p{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 5px;
+    
+}
+.background-img .detalis b{
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+.background-img .detalis button{
+  width:max-content;
+  background-color: #ccc;
+  color: black;
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  text-transform: uppercase;
+}
+
+
+/* end background-img */
+
+/* end header */
+
+
+/*start body */
+/* start  all-------- */
+.body{
+    display: flex;
+  gap: 30px;
+  background-color: #ccc;
+  padding: 30px;
+  justify-content: center;
+}
+.body .all{
+width: calc((100% - 30px) / 3 * 2);
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+.body aside{
+width: calc((100% - 30px) / 3 );
+display: flex;
+flex-direction: column;
+gap: 40px;
+}
+.body .all .HEADING{
+    background-color: #fff;
+    
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+ position: relative;
+}
+.body .all .HEADING .titel{ 
+   display: flex;
+   flex-direction: column;
+   gap: 7px;
+   align-items: center;
+}
+.body .all .HEADING .titel h2{
+    font-weight: 400;
+ }
+.body .all .HEADING .titel div{
+    display: flex;
+}
+
+.body .all .HEADING .titel div p{
+  font-size: 18px;
+ }
+.body .all .HEADING .titel div span{
+    color: #9e9c9c;
+}
+
+.body .all .HEADING .back-img{
+    width: 100%;
+}
+
+.body .all .HEADING .back-img img{
+    width: 100%;
+    height: 70vh;
+}
+
+.body .all .HEADING .dtalis div b{
+    font-weight: bold;
+}
+.body .all .HEADING  div:nth-of-type(3) span{
+    font-size: 15px;
+    font-style:initial;
+    font-weight:normal;
+    font-size: 20px;
+    font-weight: 300;
+  
+}
+
+.body .all .HEADING .dtalis{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.body .all .HEADING .dtalis div:nth-child(2) p{
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+.body .all .HEADING div:nth-of-type(4){
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.body .all .HEADING div:nth-of-type(4) button:nth-child(1){
+    background-color: #fff;
+    border: 1px solid #000;
+    padding:10px 15px;
+}
+.body .all .HEADING div:nth-of-type(4) button:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+  background-color: #000;
+  color: #fff;
+  padding: 7px 20px;
+  border: none;
+}
+.body .all .HEADING div:nth-of-type(4) button:nth-child(2) p{
+    background-color: #fff;
+    padding: 5px 10px;
+    color: #000;
+    text-align: center;
+}
+.body .all .HEADING div:nth-of-type(5){
+    background-color: #ccc;
+    height: 1px;
+    width: 100%;
+    margin-top: 50px;
+    opacity: .8;
+}
+.body .all .HEADING .card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.body .all .HEADING .card .detalis{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.body .all .HEADING .card .detalis div b{
+font-size: 25px;
+font-weight: 400;
+
+}
+.body .all .HEADING .card .detalis div span{
+    font-size: 20px;
+    font-weight: 300;
+    color: #9e9c9c;
+}
+.body .all .HEADING .card .detalis p{
+ font-size: 20px;
+  font-weight: 300;
+}
+@media (max-width:775px) {
+    .body{
+        display: flex;
+        flex-direction: column;
+    }
+    .body .all{
+        width: 100%;
+
+    }
+    .body aside{
+    width: 100%;
+    }
+    
+}
+/* end  all-------- */
+/* start  aside-------- */
+.body aside .contaner{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.body aside .contaner .card{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 0 0 10px 0;
+}
+.body aside .contaner .card .detalis{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 10px;
+}
+.body aside .contaner .card .card-img{
+    width: 100%;
+}
+.body aside .contaner .card .card-img img{
+    width: 100%;
+    filter: grayscale(50%);
+}
+
+.body aside .contaner .card .detalis div:nth-child(1){
+    font-size: 20px;
+}
+.body aside .contaner .card .detalis div:nth-child(2){
+    font-size: 20px;
+    font-weight: 300;
+    
+    
+}
+.body aside .contaner .card-2 .card-s1:hover .s-img img{
+    transform: scale(1.2);
+}
+.body aside .contaner .card-2 .card-s1:hover{
+   background-color: #ccc;
+}
+.body aside .contaner .card-2 .titel , .tit{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.body aside .contaner .card-2 .card-s1{
+  display: flex;
+  gap: 20px;
+  background-color: #fff;
+  padding: 10px;
+transition: 0.5s;
+
+}
+.body aside .contaner .card-2 .card-s1 .s-img{
+     overflow: hidden;
+}
+.body aside .contaner .card-2 .card-s1 .s-img img{
+   width: 50px;
+   height: 50px;
+   transition: 1s;
+}
+.body aside .contaner .card-2 .card-s1 div:nth-child(2) p{
+    font-size: 20px;
+    font-weight: 300;
+  
+}
+.body aside .contaner .card-2 .card-s1 div:nth-child(2) span{
+    font-size: 17px;
+    font-weight: 300;
+    
+}
+
+.body aside .contaner .card-3{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 100%;
+}
+.tit{
+    font-weight: 300;
+    font-size: 22px;
+}
+.body aside .contaner .card-3 div:nth-child(2){
+    background-color: #fff;
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+.body aside .contaner .card-3 div:nth-child(2) div{
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    width: 90%;
+    height: 90%;
+    z-index: 1;
+    border-radius: 5px;
+}
+.body aside .contaner .card-3 div:nth-child(2) div p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    z-index: 2;
+    color: #000;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.body aside .contaner .card-4 > div:nth-child(2){
+  display: flex;
+ flex-direction: column;
+  background-color: #fff;
+  padding: 20px 20px 30px ;
+  gap: 15px;
+}
+.body aside .contaner .card-4 div:nth-child(2) div:nth-child(1) p:nth-child(1){
+    background-color: #000;
+    color: #fff;
+}
+.body aside .contaner .card-4 div:nth-child(2) div:nth-child(1){
+    display: flex;
+   gap: 5px;
+}
+.body aside .contaner .card-4 div:nth-child(2) div:nth-child(1) p{
+    background-color: #f1f1f1;
+    color: #000000;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.body aside .contaner .card-4 div:nth-child(2) div:nth-child(2){
+    display: flex;
+    gap: 5px;
+
+}
+.body aside .contaner .card-4 div:nth-child(2) div:nth-child(2) p{
+    background-color: #f1f1f1;
+    color: #000000;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+
+.body aside .contaner .card-4 div:nth-child(2) div:nth-child(3){
+    display: flex;
+    gap: 5px;
+    width: 70%;
+}
+.body aside .contaner .card-4 div:nth-child(2) div:nth-child(3) p{
+    background-color: #f1f1f1;
+    color: #000000;
+    width: 90%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+
+}
+.body aside .contaner .card-5{
+    display: flex;
+    flex-direction: column;
+}
+.body aside .contaner .card-5 .img-dad{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #fff;
+    padding: 10px;
+
+}
+.body aside .contaner .card-5 .img-dad div{
+    width: calc((100% - 25px) / 2);
+}
+
+.body aside .contaner .card-5 .img-dad div img{
+    width: 100%;
+}
+
+.body aside .contaner .card-6{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+}
+.body aside .contaner .card-6 div:nth-child(2){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 100%;
+    padding: 0 10px;
+}
+.body aside .contaner .card-6 div:nth-child(2) i{
+    font-size: 25px;
+}
+.body aside .contaner .card-6 div:nth-child(2) i:hover{
+    opacity: .6 ;
+}
+.body aside .contaner .card-7{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+.body aside .contaner .card-7 div:nth-child(2){
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.body aside .contaner .card-7 div:nth-child(2) p{
+    font-size: 17px;
+    font-weight: 300;
+    width: 80%;
+}
+.body aside .contaner .card-7 div:nth-child(2) input{
+   padding: 15px;
+   border: 1px solid #e6dfdf;
+}
+
+.body aside .contaner .card-7 div:nth-child(2) input:focus{
+    outline: 2px solid #000;
+    border-radius: 2px;
+}
+
+.body aside .contaner .card-7 div:nth-child(2) button{
+  padding: 10px 20px;
+  border: none;
+  background-color: red;
+  color: #fff;
+  transition: .5s;
+  font-size: 17px;
+  font-weight: 300;
+}
+.body aside .contaner .card-7 div:nth-child(2) button:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+/* end  aside-------- */
+
+/*end body */
+
+
+/* {{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{{end}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}}} */
+.foot{
+    background-color: #575757;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.foot .div1  button{
+    font-size: 25px;
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+.foot .div2{
+   color: #fff;
+   display: flex;
+   gap: 5px;
+   font-size: 20px;
+    font-weight: 300;
+}
+.foot .div2 a{
+   color: #fff;
+   font-size: 20px;
+    font-weight: 300;
+}
